@@ -1,0 +1,27 @@
+.titulo{
+    font-size: 5em;
+    width: 100%;
+    text-align: left;
+    color: white;
+    background:url(imagenes/nubes.jpeg)
+}
+
+.caja-input{
+    font-size: 2em;
+    text-align: center;
+}
+
+.titulo-de-caja{
+    display: block;
+    padding: 1em 0;
+}
+
+.caja-encriptador{
+    width: 31%;
+    height: 944px;
+    top: 100px;
+    left: 1000px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 20px;
+}
