@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
 </head>
 
  <header>
     <div class="caja-bienvenido">
-        <h1 class="titulo">Bienvenido</h1>
+        <h1 class="titulo">Bienvenido al Encriptador</h1>
     </div>
  </header>
 
 <body>
      <main>
          <div class="caja-input">
-             <label for="¿Que texto deseas desencriptar?" class="titulo-de-caja">¿Que texto deseas desencriptar?</label>
-             <input type="text" id="texto-encriptar" required>
+             <label for="¿Que texto deseas desencriptar?" class="titulo-de-caja-usuario">¿Que texto deseas desencriptar?</label>
+             <input type="text" id="texto-encriptar" class="input-texto-usuario" required placeholder="Escribe el texto que desea encriptar...">
         </div>
 
         <div class="caja-encriptador">
             <label  for="texto-input" class="titulo-input">Texto Codificado</label>
-            <input type="text" id="texto.input" required>
+            <input type="text" class="titulo-input" id="caja-resultado">
+            <button onclick="botoncopiar()" class="boton-copiar">Copiar</button>
         </div>
+
+        <form class="botones-encriptar-descifrar">
+            <button onclick="codificar()" class="boton-encriptar">Encriptar</button>
+            <button onclick="descifrar()" class="boton-decifrar">Descifrar</button>
+        </form>
+
     </main>
 
     <footer>
