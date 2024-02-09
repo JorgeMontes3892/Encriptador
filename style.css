@@ -15,8 +15,81 @@ main{
     font-family: 'Manjari', sans-serif;
 }
 
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .caja-input{
     font-size: 2em;
+}
+
+.text-input{
+    width: 970px;
+    height: 500px;
+    top: 180px;
+    position: absolute;
+    left: 5px;
+    background: none;
+    border-radius: 10px;
+}
+
+#btn-cifrar{
+    font-size: 20px;
+    position: absolute;
+    top: 730px;
+    width: 336px;
+    height: 67px;
+    left: 100px;
+    background: url(imagenes/nubes.jpeg);
+    border: 0;
+    border-radius: 10px;
+    color: #AF730B;
+    font-weight: 600;
+}
+
+#btn-cifrar:hover{
+    transform: scale(1.10);
+    transition: 0.5s all;
+}
+
+#btn-decifrar{
+    font-size: 20px;
+    position: absolute;
+    top: 730px;
+    width: 336px;
+    height: 67px;
+    right: 580px;
+    background: url(imagenes/nubes.jpeg);
+    border: 0;
+    border-radius: 10px;
+    color: #AF730B;
+    font-weight: 600;
+}
+
+#btn-decifrar:hover{
+    transform: scale(1.10);
+    transition: 0.5s all;
+}
+
+#btn-copy{
+    position: absolute;
+    font-size: 20px;
+    width: 220px;
+    top: 620px;
+    right: 110px;
+    height: 67px;
+    background: url(imagenes/nubes.jpeg);
+    border: 0;
+    border-radius: 10px;
+    color: #AF730B;
+    font-weight: 600;
+}
+
+#btn-copy:hover{
+    transform: scale(1.10);
+    transition: 0.5s all;
 }
 
 .titulo-de-caja-usuario{
@@ -29,12 +102,14 @@ main{
 }
 
 .input-texto-usuario{
+    width: 950px;
     position: absolute;
     top: 140px;
-    width: 40%;
-    height: 500px;
-    left: 100px;
+    left: 10px;
+    height: 550px;
+    border: 2px solid black;
     border-radius: 10px;
+    background: none;
 }
 
 .titulo-de-caja{
@@ -43,6 +118,7 @@ main{
 }
 
 .caja-encriptador{
+    font-size: 30px; 
     width: 31%;
     height: 720px;
     top: 100px;
@@ -53,75 +129,25 @@ main{
     border-radius: 20px;
 }
 
-.input-texto-usuario{
-    width: 950px;
-    position: absolute;
-    left: 10px;
-    height: 550px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background: none;
-}
-
-.titulo-input{
+.titulo-texto-codificado{
     font-size: 29px;
-    display: block;
     margin: 1em auto;
     color: #885600;
     font-weight: 600;
 }
 
-#caja-resultado{
-    height: 500px;
+.texto-encriptado{
+    font-size: 40px;
+}
+
+.text-input-salida{
+    position: absolute;
+    width: 400px;
+    height: 480px;
     border-radius: 10px;
     border: 2px solid black;
     background: none; 
+    right:20px;
+    text-overflow: clip;
 }
 
-.botones-encriptar-descifrar{
-    position: absolute;
-    width: 450px;
-    top: 730px;
-    left: 520px;
-}
-
-.boton-encriptar{
-    font-size: 20px;
-    position: absolute;
-    width: 336px;
-    height: 67px;
-    right: 520px;
-    background: none;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: #AF730B;
-    font-weight: 600;
-}
-
-.boton-decifrar{
-    position: absolute;
-    font-size: 20px;
-    width: 336px;
-    height: 67px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: none;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: #AF730B;
-    font-weight: 600;
-}
-
-.boton-copiar{
-    position: absolute;
-    font-size: 20px;
-    width: 200px;
-    top: 650px;
-    right: 140px;
-    height: 40px;
-    background: none;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: #AF730B;
-    font-weight: 600;
-}
