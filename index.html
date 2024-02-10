@@ -16,8 +16,8 @@
         <h1 class="titulo">Bienvenido al Encriptador</h1>
     </div>
 
-    <div class="logo">
-        <img src="imagenes/Logo.png"  alt="logotipo de alura">
+    <div>
+        <img src="imagenes/Logo.png" class="logotipo" alt="logotipo de alura">
     </div>
 
  </header>
@@ -27,8 +27,8 @@
         <section class="caja formulario"></section>
          <form action="" class="caja-input">
              <label for="input-texto">¿Que texto deseas desencriptar?</label>
-             <p>Solo funciona con letras minusculas y sin caracteres especiales</p>
-                <input class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar...">
+             <p class="texto-advertencia">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
+                <textarea class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar..."></textarea>
                     <div class="input-texto-botones">
                         <input class="btn" type="button" value="Encriptar" id="btn-cifrar">
                         <input class="btn" type="button" value="Desencriptar" id="btn-decifrar">
@@ -39,7 +39,7 @@
 
         <section class="caja-encriptador">
             <h2 id="" class="titulo-texto-codificado">Texto Codificado</h2>
-            <input class="text-input-salida" type="text" id="msg">
+            <textarea class="text-input-salida" type="text" id="msg" disabled></textarea>
             <input class="btn" type="button" value="Copiar" id="btn-copy">
         </section>
 
