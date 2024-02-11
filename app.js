@@ -18,8 +18,8 @@ function cifrar (){
     }
 }
 
-    
 let boton1 = document.querySelector("#btn-cifrar"); boton1.onclick = cifrar;
+
 
 function desencriptar (){
     if (!validartexto(true)){
@@ -33,11 +33,12 @@ function desencriptar (){
 
 let boton2 = document.querySelector("#btn-decifrar"); boton2.onclick = desencriptar;
 
+
  function copiar(){
     let texto =  document.querySelector(".text-input-salida");
     navigator.clipboard.writeText(texto.value);
     }
 
-    let boton3 = document.querySelector("#btn-copy"); 
+let boton3 = document.querySelector("#btn-copy"); 
     boton3.onclick = copiar
 

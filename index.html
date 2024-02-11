@@ -17,7 +17,7 @@
     </div>
 
     <div>
-        <video muted autoplay loop src="imagenes/video abstarco.mp4" type="video/mp4" ></video>
+        <video muted autoplay loop class="video" src="imagenes/video-abstacto-azul.mp4" type="video/mp4" ></video>
     </div>
     <div class="capa"></div>
 
@@ -25,7 +25,7 @@
 
 <body>
      <main>
-        <section class="caja formulario"></section>
+        <section class="caja-formulario"></section>
          <form action="" class="caja-input">
              <label for="input-texto">¿Que texto deseas desencriptar?</label>
              <p class="texto-advertencia">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
@@ -39,14 +39,11 @@
 
         <section class="caja-encriptador">
             <h2 id="" class="titulo-texto-codificado">Texto Codificado</h2>
-            <textarea class="text-input-salida" type="text" id="msg" disabled></textarea>
+            <textarea class="text-input-salida" type="text" id="msg" >No se a encontrado ningún mensaje</textarea>
             <input class="btn" type="button" value="Copiar" id="btn-copy">
         </section>
     </main>
 
-    <footer>
-
-    </footer>
 </body>
 
 <script src="app.js"></script>
