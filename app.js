@@ -9,6 +9,14 @@ function validartexto(){
     }
 }
 
+function palabrarepetida(){
+    let texto = document.querySelector("#input-texto").value;
+    let palabraRepetida = texto.match(/imes/gi)
+
+    if(!palabraRepetida || palabraRepetida ===0)
+    return true;
+}
+
 function cifrar (){
     if (!validartexto(true)){
     let texto = document.querySelector("#input-texto").value;
@@ -20,17 +28,14 @@ function cifrar (){
 
 let boton1 = document.querySelector("#btn-cifrar"); boton1.onclick = cifrar;
 
-
 function desencriptar (){
     if (!validartexto(true)){
     let texto = document.querySelector("#input-texto").value;
-    let textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
-    document.querySelector(".text-input-salida").value = textoCifrado;
+    let textoDesencriptado = texto.replace(/ufat/gi,"u").replace(/ober/gi, "o").replace(/enter/gi, "e").replace( / imes/gi, "i").replace(/ai/gi, "a") /*jaimenters = james*/
+    document.querySelector(".text-input-salida").value = textoDesencriptado;
     document.querySelector("#input-texto").value;
-
     }
-}
-
+ }
 let boton2 = document.querySelector("#btn-decifrar"); boton2.onclick = desencriptar;
 
 
@@ -41,4 +46,3 @@ let boton2 = document.querySelector("#btn-decifrar"); boton2.onclick = desencrip
 
 let boton3 = document.querySelector("#btn-copy"); 
     boton3.onclick = copiar
-
