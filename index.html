@@ -14,27 +14,30 @@
     <header>
         <div class="caja-bienvenido">
             <h1 class="titulo">Bienvenido al Encriptador</h1>
+            <p class="condicion">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
         </div>
         <div>
              <video muted autoplay loop class="video" src="imagenes/video-abstacto-azul.mp4" type="video/mp4" ></video>
         </div>
     </header>
-    <main>        
+    <main class="caja-grande">        
         <form class="caja-input">
-            <label for="input-texto">¿Que texto deseas desencriptar?</label>
-            <p class="texto-advertencia">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
+            <label for="input-texto" class="texto-advertencia">Ingrese su texto</label>
             <textarea class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar..."></textarea>
-            <div class="input-texto-botones">
-                <button type="button" value="Encriptar" id="btn-cifrar">Encriptar</button>
-                <button type="button" value="Desencriptar" id="btn-decifrar">Desencriptar</button>
-            </div>
         </form>
         <section class="caja-encriptador">
             <h2 class="titulo-texto-codificado">Texto Encriptado</h2>
             <textarea class="text-input-salida" type="text" id="msg" disabled>No se a encontrado ningún mensaje</textarea>
-            <button type="button" value="Copiar" id="btn-copy">Copiar</button>
         </section>
     </main>
+        <footer class="caja-btn">
+            <div class="input-texto-botones">
+                <button type="button" value="Encriptar" id="btn-cifrar">Encriptar</button>
+                <button type="button" value="Desencriptar" id="btn-decifrar">Desencriptar</button>
+                <button type="button" value="Copiar" id="btn-copy">Copiar</button>
+            </div>
+        </footer>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
