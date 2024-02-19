@@ -20,7 +20,7 @@ function palabrarepetida(){
 function cifrar (){
     if (!validartexto(true)){
     let texto = document.querySelector("#input-texto").value;
-    let textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+    const textoCifrado = texto.replaceAll(/e/gi, "enter").replaceAll(/i/gi, "imes").replaceAll(/a/gi, "ai").replaceAll(/o/gi, "ober").replaceAll(/u/gi, "ufat");
     document.querySelector(".text-input-salida").value = textoCifrado;
     document.querySelector("#input-texto").value;
     }
@@ -31,7 +31,7 @@ let boton1 = document.querySelector("#btn-cifrar"); boton1.onclick = cifrar;
 function desencriptar (){
     if (!validartexto(true)){
     let texto = document.querySelector("#input-texto").value;
-    let textoDesencriptado = texto.replace(/ufat/gi,"u").replace(/ober/gi, "o").replace(/enter/gi, "e").replace( / imes/gi, "i").replace(/ai/gi, "a") /*jaimenters = james*/
+    const textoDesencriptado = texto.replaceAll(/ufat/gi,"u").replaceAll(/ober/gi, "o").replaceAll(/enter/gi, "e").replaceAll( /imes/gi, "i").replaceAll(/ai/gi, "a") /*jaimenters = james*/
     document.querySelector(".text-input-salida").value = textoDesencriptado;
     document.querySelector("#input-texto").value;
     }
