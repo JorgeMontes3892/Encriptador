@@ -207,6 +207,7 @@ main{
 }
 
 .text-input{
+    height: 40%;
     width: 70%;
     height: 100%;
 }
@@ -220,18 +221,22 @@ main{
 }
 
 .text-input-salida{
+    height: 40%;
     width: 77%;
     left: 10px;
 }
 
 .caja-btn{
+    display: flex;
+    justify-content: space-evenly;
     top: 4em;
+    height: 200px;
 }
 
 .input-texto-botones{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    height: 200%;
+    height: 100%;
 }
 }
