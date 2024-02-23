@@ -19,8 +19,8 @@ function palabrarepetida(){
 
 function cifrar (){
   if (!validartexto(true)){
-  let texto = document.querySelector("#input-texto").value;
-  let textoCifrado = texto.replaceAll(/e/gi, "enter").replaceAll(/i/gi, "imes").replaceAll(/a/gi, "ai").replaceAll(/o/gi, "ober").replaceAll(/u/gi, "ufat");
+  const texto = document.querySelector("#input-texto").value;
+  const textoCifrado = texto.replaceAll(/e/gi, "enter").replaceAll(/i/gi, "imes").replaceAll(/a/gi, "ai").replaceAll(/o/gi, "ober").replaceAll(/u/gi, "ufat");
   document.querySelector(".text-input-salida").value = textoCifrado;
   document.querySelector("#input-texto").value;
   }
