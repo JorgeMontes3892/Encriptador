@@ -17,14 +17,14 @@
 
 .titulo{
     font-size: 5em;
-    background: linear-gradient(90deg,rgb(174, 0, 255), rgb(255, 3, 188));
+    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(3, 247, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .condicion{
     font-size: 3em;
-    background: linear-gradient(90deg,rgb(255, 0, 230), rgb(255, 196, 3));
+    background: linear-gradient(90deg,rgb(3, 247, 255), rgb(255, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -52,7 +52,6 @@
     display: flex;
     flex-direction: row;
     z-index: 2;
-    gap: 5%;
     justify-content: space-between;
 }
 
@@ -72,10 +71,11 @@
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background: linear-gradient(90deg,rgb(246, 255, 0), rgb(255, 3, 3));
+    background: linear-gradient(90deg,rgb(255, 255, 255), rgb(3, 247, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bolder
+    font-weight: bolder;
+    padding-bottom: 10px;
 }
 
 .text-input{
@@ -91,7 +91,7 @@
     background: transparent;
     backdrop-filter: blur(3px);
     border-radius: 20px;
-    border: 2px solid rgb(24, 23, 23);
+    border: 0;
     left: 10px;
     resize: none;
 }
@@ -101,7 +101,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    top: 2em;
     text-align: center;
     height: 100px;
 }
@@ -119,13 +118,13 @@
     justify-content: center;
     display: flex;
     flex: 0.2;
-    font-size: 20px;
+    font-size: 25px;
     background: none;
     border: 2px solid transparent;
     border-radius: 10px;
     border-image: linear-gradient(to left,aqua ,white)0 0 1 0; /*formato azul  border-image: linear-gradient(to left,aqua ,white )0 0 1 0;*/
     color: rgba(248, 242, 242, 0.9);
-    font-weight: 600;
+    font-weight: bolder;
     padding-bottom: 20px;
 }
 
@@ -138,7 +137,7 @@
     justify-content: center;
     display: flex;
     flex: 0.2;
-    font-size: 20px;
+    font-size: 25px;
     background: none;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -156,7 +155,7 @@
     justify-content: center;
     display: flex;
     flex: 0.2;
-    font-size: 20px;
+    font-size: 25px;
     background: none;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -177,6 +176,7 @@
     position: relative;
     text-align: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .titulo-texto-codificado{
@@ -185,7 +185,7 @@
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background: linear-gradient(90deg,rgb(246, 255, 0), rgb(255, 3, 3));
+    background: linear-gradient(90deg,rgb(0, 247, 255), rgb(255, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder

@@ -17,19 +17,25 @@
             <h1 class="titulo">Bienvenido al Encriptador</h1>
             <p class="condicion">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
         </div>
-        <div>
-             <video muted autoplay loop class="video" src="imagenes/video-abstacto-azul.mp4" type="video/mp4" ></video>
-        </div>
     </header>
-    <main class="caja-grande">        
+    <main class="caja-grande">
         <form class="caja-input">
             <label for="input-texto" class="texto-advertencia">Ingrese su texto</label>
             <textarea class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar..."></textarea>
         </form>
+
         <section class="caja-encriptador">
             <h2 class="titulo-texto-codificado">Texto Encriptado</h2>
             <textarea class="text-input-salida" type="text" id="msg" disabled>No se a encontrado ningún mensaje</textarea>
         </section>
+
+        <section class="video-conteiner">
+            <div class="video-caja">
+                <video muted autoplay loop class="video" src="imagenes/video-estrellas.mp4" type="video/mp4"></video>
+            </div>
+            <div class="capa"></div>
+        </section>
+
     </main>
         <footer class="caja-btn">
             <div class="input-texto-botones">
@@ -38,7 +44,6 @@
                 <button type="button" value="Copiar" id="btn-copy" onclick="btncopiar()">Copiar</button>
             </div>
         </footer>
-    </footer>
     <script src="Solucion-2.js"></script>
 </body>
 </html>
