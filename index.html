@@ -9,35 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-        <title>Encriptador</title>
+    <title>Encriptador</title>
 </head>
-<body>
-    <header>
-        <div class="caja-bienvenido">
-            <h1 class="titulo">Bienvenido al Encriptador</h1>
-            <p class="condicion">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
-        </div>
-    </header>
-    <main class="caja-grande">
-        <form class="caja-input">
-            <label for="input-texto" class="texto-advertencia">Ingrese su texto</label>
-            <textarea class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar..."></textarea>
-        </form>
-
-        <section class="caja-encriptador">
-            <h2 class="titulo-texto-codificado">Texto Encriptado</h2>
-            <textarea class="text-input-salida" type="text" id="msg" disabled>No se a encontrado ningún mensaje</textarea>
-        </section>
-
+<body>  
+    <main class="hero">
         <section class="video-conteiner">
             <div class="video-caja">
                 <video muted autoplay loop class="video" src="imagenes/nubes-negras-2.mp4" type="video/mp4"></video>
             </div>
-            <div class="capa"></div>
         </section>
 
-    </main>
-        <footer class="caja-btns">
+        <div class="caja-bienvenido">
+            <h1 class="titulo">Bienvenido al Encriptador</h1>
+            <p class="condicion">&#9888; Solo funciona con letras minusculas y sin caracteres especiales &#9888;</p>
+        </div>
+
+        <div class="caja-grande">
+            <form class="caja-input">
+                <label for="input-texto" class="texto-advertencia">Ingrese su texto</label>
+                <textarea class="text-input" type="text" id="input-texto" placeholder="Escribe el texto que desea encriptar..."></textarea>
+            </form>
+
+            <section class="caja-encriptador">
+                <h2 class="titulo-texto-codificado">Texto Encriptado</h2>
+                <textarea class="text-input-salida" type="text" id="msg" disabled>No se a encontrado ningún mensaje</textarea>
+            </section>
+
+        </div>
+
+        <div class="caja-grande-btns">
             <div class="caja-btns-cifrar-desencripar">
                 <button type="button" value="Encriptar" id="btn-cifrar" onclick="btncifrar()">Encriptar</button>
                 <button type="button" value="Desencriptar" id="btn-decifrar" onclick="btndesencriptar()">Desencriptar</button>
@@ -46,7 +46,8 @@
             <div class="caja-btn-copy">
                 <button type="button" value="Copiar" id="btn-copy" onclick="btncopiar()">Copiar</button>
             </div>
-        </footer>
+        </div>
+    </main>
     <script src="Solucion-2.js"></script>
 </body>
 </html>

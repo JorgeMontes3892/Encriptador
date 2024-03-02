@@ -1,4 +1,9 @@
 /* Font types // font-family: 'Manjari', sans-serif; - font-family: "Comfortaasalida", sans-serif;*/
+.hero{
+    min-height: 100vh;
+    position: relative;
+}
+
 .caja-bienvenido, .caja-grande, .text-input-salida, .text-input{
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
@@ -9,7 +14,6 @@
 .caja-bienvenido{ /*This is the title "Bienvenido" box-can add  border to see the limits*/
     width: 100%;
     text-align: center;
-    margin: 10px auto;
     position: relative;
     z-index: 2;
 }
@@ -28,15 +32,15 @@
     -webkit-text-fill-color: transparent;
 }
 
+
 .video{
     position: absolute;
-    top: 0;
-    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    min-height: 100vh;
-    background-size: cover;
+    z-index: -1;
 }
 
 .capa{
@@ -96,23 +100,25 @@
     resize: none;
 }
 
-.caja-btns{
+.caja-grande-btns{
     width: 100%;
     position: relative;
     display: flex;
-    top: 1em;
+    margin-top: 20px;
 }
 
-.caja-btns-cifrar-desencripar {
+.caja-btns-cifrar-desencripar{
     display: flex;
     width: 50%;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .caja-btn-copy{
     width: 50%;
     display: flex;
     justify-content: space-around;
+    z-index: 2;
 }
 
 
